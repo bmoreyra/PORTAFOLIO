@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LunchRes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Name:">Name:</string>
+    <string name="Address:">Address:</string>
+    <string name="Phone:">Phone:</string>
+    <string name="Save">Save</string>
+    <string name="Reservation">Reservation</string>
+    <string name="Delivery">Delivery</string>
+    <string name="TakeOut">TakeOut</string>
+    <string name="Type:">Type:</string>
+    <string name="Notes:">Notes:</string>
+ </resources>

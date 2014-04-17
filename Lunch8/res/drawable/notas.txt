@@ -1,0 +1,39 @@
+Vamos a agregar notas al programa, he decidido adjuntar este documento para no perderme tan feo.
+primero agregamos una cajita para agregar el texto, en mi Lunch agrego una variable llamada current
+que es otro objeto como lo es restaurant, ahi voy a guardar los datos q el usuario pone en  sus notas.
+
+necesita ser current por q sera asignado a cada persona q conviva con mi restaurant.
+ 
+ @Override
+public boolean onOptionsItemSelected(MenuItem item) {
+if (item.getItemId()==R.id.toast) {
+String message="No restaurant selected";
+if (current!=null) { message=current.getNotes();
+}
+Toast.makeText(this, message, Toast.LENGTH_LONG).show(); return(true);
+}
+return(super.onOptionsItemSelected(item)); }
+
+es un menu , mi item es un objeto del menu:).
+Como consecuencia en vez de usar el objeto lunch de mi clase lunch donde declare mis strings bla bla bla 
+ahora uso current.mi  evento on click listener casi no cambio excepto casi current por lunch.
+
+Lunch lu ahora es current.
+
+EN ESTA OCASION USAREMOS UNA PROGRESBAR AQUI LOS METODOS
+¿COMO PARA QUE?
+Para ver como se va realizando mientras esta"cargando"
+gueno. . 
+
+super.onCreate(savedInstanceState); 
+requestWindowFeature(Window.FEATURE_PROGRESS); 
+setContentView(R.layout.main);
+
+￼￼￼￼private void doSomeLongWork(final int incr) { 
+SystemClock.sleep(250); // should be something more useful!
+}
+
+private Runnable longTask=new Runnable() { public void run() {
+for (int i=0;i<20;i++) { doSomeLongWork(500);
+} }
+};

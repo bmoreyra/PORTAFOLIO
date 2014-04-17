@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+       <TextView
+        android:id="@+id/tV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tV2"
+        />
+
+    <EditText
+        android:id="@+id/eT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tV2"
+        android:layout_below="@+id/tV1"
+        android:ems="10" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/eT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tV2"
+        android:layout_below="@+id/tV2"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tV1"
+        android:layout_below="@+id/eT1"
+        android:layout_marginRight="18dp"
+        />
+
+    <Button
+        android:id="@+id/sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eT2"
+        android:layout_below="@+id/eT2"
+        android:onClick="sumar"/>
+
+    <TextView
+        android:id="@+id/tV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sumar"
+        android:layout_below="@+id/sumar"
+         />
+
+</RelativeLayout>
